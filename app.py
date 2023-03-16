@@ -262,11 +262,11 @@ with tab_vio:
                     st.write(percent_complete)
                     my_bar.progress(percent_complete + 1)
                 my_bar.progress(percent_complete + 1)
-        dir_path = r"D:\Centuriton\Dynamic-Traffic\Violation-Detection-System\Detected Images"
+        dir_path = r"./Violation-Detection-System/Detected Images/"
         count = len(fnmatch.filter(os.listdir(dir_path), '*.*'))
 
         time.sleep(40)
-        img_path = r"D:\Centuriton\Dynamic-Traffic\Violation-Detection-System\Detected Images\\"
+        img_path = r"./Violation-Detection-System/Detected Images/"
         i1, i2, i3 = st.columns(3)
         c = 0
         for i in os.listdir(img_path):
@@ -285,20 +285,8 @@ with tab_vio:
                 c = 0
 
 with tab_sta:
-    # _, row3_1,_ = st.columns((.2, 7.1, .2))
     data = pd.read_csv("./Resources/survey.csv")
-    # #st.write(data)
-    # with row3_1:
-    #     st.markdown("")
-    #     see_data = st.expander('Click here to see the synthetic data  👉')
-    #     with see_data:
     st.dataframe(data=data.reset_index(drop=True))
-    # data = pd.read_csv("./Resources/survey.csv")
-    # l=['Actual Density Score','Predicted Density Score']
-    # st.write(data['Group'] == '480p')
-    # data_480p = pd.DataFrame(data[data['Group'] == '480p'],columns=l)
-    # data_720p = pd.DataFrame(data[data['Group'] == '720p'], columns=l)
-    # data_1080p = pd.DataFrame(data[data['Group'] == '1080p'], columns=l)
     st.text('')
 
 
