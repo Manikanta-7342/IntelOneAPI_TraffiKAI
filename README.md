@@ -1,4 +1,4 @@
-# Centuriton Hackathon 
+# IntelOneAPI Hackathon 
 
 ## Todo
 
