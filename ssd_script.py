@@ -7,7 +7,7 @@ import time
 
 
 imsize = (512, 512)
-pb_dir = './ssd_inception_v2_coco_2017_11_17/frozen_inference_graph.pb'
+pb_dir = './Models/frozen_inference_graph.pb'
 im_output = './Test/images/'
 num_pred = 30
 density = {'car': 2, 'bus': 4, 'truck': 4, 'person': 0.5, 'bicycle': 0.5, 'motorcycle': 1}
@@ -69,17 +69,10 @@ with open('./Resources/text_files/labels.txt', 'r') as file:
 		a = str(a)
 		labels.append(a)
 
-
 vid_inp_east = sys.argv[1]
 vid_inp_west = sys.argv[3]
 vid_inp_north = sys.argv[4]
 vid_inp_south = sys.argv[2]
-
-# vid_inp_east = "Test\\videos\\1080p\\7.0.1080.mp4"
-# vid_inp_west = "Test\\videos\\Emergency\\6.0.720.mp4"
-# vid_inp_north = "Test\\videos\\480p\\2.0.480.mp4"
-# vid_inp_south = "Test\\videos\\1080p\\3.2.1080.mp4"
-
 
 video_reader_east = cv2.VideoCapture(vid_inp_east)
 video_reader_west = cv2.VideoCapture(vid_inp_west)
@@ -175,11 +168,6 @@ try:
 except:
 	print("Video_Ended")
 
-
-# print("1st video",sum(li_1)/len(li_1))
-# print("2nd video",sum(li_2)/len(li_2))
-# print("3rd video",sum(li_3)/len(li_3))
-# print("4th video",sum(li_4)/len(li_4))
 video_reader_east.release()
 video_reader_west.release()
 video_reader_north.release()
