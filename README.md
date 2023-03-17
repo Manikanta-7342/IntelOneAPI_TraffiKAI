@@ -18,6 +18,7 @@ TraffiKAI uses multiple memory intensive machine learning models which increases
 ![WhatsApp Image 2023-03-17 at 19 12 03](https://user-images.githubusercontent.com/80829447/225927241-274a2524-7f6c-4070-a0d9-98c323a91e4d.jpg)
 
 The Emergency Vehicle Detection model is executed on Intel DevCloud where the Tensorflow is optimised by oneDNN and the Intel Extension for Scikit-Learn is enabled.  
+Intel DevCloud Link: https://jupyter.oneapi.devcloud.intel.com/user/u184510/doc/tree/EmergencyVehicleDetection 
 
 ![WhatsApp Image 2023-03-17 at 17 53 27](https://user-images.githubusercontent.com/80829447/225928507-7d0b7666-016e-48f8-b62b-60177941fcbf.jpg)  
 The base environment contains a version of Python which is not installed through the Intel channel. The environment named oneapi contains the libraries which are installed through the Intel channel. 
