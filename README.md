@@ -13,10 +13,29 @@ https://user-images.githubusercontent.com/80829447/205123673-82164b3f-d8cd-4d97-
 
 # The Intel oneAPI Edge  
 ## Toolkit used: Intel® AI Analytics Toolkit (AI Kit) - oneDNN (Deep Neural Network Library)
-TraffiKAI uses multiple memory intensive machine learning models which increases the runtime by a significant amount causing a delay in the processing of the input videos on the systems with limited processing power. The Intel® AI Analytics Toolkit (AI Kit) helps in achieving better results by optimising the models with the help of oneAPI Deep Neural Network Library (oneDNN). TraffiKAI uses state-of-the-art deep learning frameworks like PyTorch and Tensorflow which are optimized for the Intel architecture by the oneAPI platform and further boosts the inference of the models. The toolkit also has support for a number of pre-trained models such as DenseNet-169, YOLOv3, LSTM (audio) which are used in TraffiKAI and help to improve the performance. Using the pre-trained models, transfer learning has been implemented on the Intel DevCLoud for oneAPI which improvises the performance and accuracy. Intel® Distribution of OpenVINO™ Toolkit is also used to boost the object detection models.
+TraffiKAI uses multiple memory intensive machine learning models which increases the runtime by a significant amount causing a delay in the processing of the input videos on the systems with limited processing power. The Intel® AI Analytics Toolkit (AI Kit) helps in achieving better results by optimising the models with the help of oneAPI Deep Neural Network Library (oneDNN). TraffiKAI uses state-of-the-art deep learning frameworks like PyTorch and Tensorflow which are optimized for the Intel architecture by the oneAPI platform and further boosts the inference of the models. scikit-learn is an important library which provides various algorithms of machine learning as functions. Intel(R) Extension for Scikit-Learn is also enabled to improve the performance. The toolkit also has support for a number of pre-trained models such as DenseNet-169, YOLOv3, LSTM (audio) which are used in TraffiKAI and help to improve the performance. Using the pre-trained models, transfer learning has been implemented on the Intel DevCloud for oneAPI which improvises the performance and accuracy. Intel® Distribution of OpenVINO™ Toolkit is also used to boost the object detection models.
 
-![image](https://user-images.githubusercontent.com/80829447/225880812-89b881e0-dedf-461e-a85c-fa6c754e9d6f.png)  
-The Violoation Detection model is executed on the local system wherein an environment is created and Tensorflow is installed through the Intel channel. The AI Analytics Toolkit is used to install and optimize all the libraries which are present in the project.  
+![WhatsApp Image 2023-03-17 at 19 12 03](https://user-images.githubusercontent.com/80829447/225927241-274a2524-7f6c-4070-a0d9-98c323a91e4d.jpg)
+
+The Emergency Vehicle Detection model is executed on Intel DevCloud where the Tensorflow is optimised by oneDNN and the Intel Extension for Scikit-Learn is enabled.  
+
+![WhatsApp Image 2023-03-17 at 17 53 27](https://user-images.githubusercontent.com/80829447/225928507-7d0b7666-016e-48f8-b62b-60177941fcbf.jpg)  
+The base environment contains a version of Python which is not installed through the Intel channel. The environment named oneapi contains the libraries which are installed through the Intel channel. 
+
+![WhatsApp Image 2023-03-17 at 17 48 27](https://user-images.githubusercontent.com/80829447/225928512-ef24a2a3-c707-41c1-a6eb-76fbf5d2eeef.jpg)  
+The Dynamic Traffic Signalling model uses Tensorflow which is optimised using oneDNN.  
+
+## Time Elapsed  
+
+
+![base](https://user-images.githubusercontent.com/80829447/225929189-425d3277-11e8-4cdb-a4c6-8e8ceb4b07d7.jpg)  
+Time taken for the project to execute without oneAPI(base environment) : 49.82 seconds
+
+![oneapi](https://user-images.githubusercontent.com/80829447/225929182-e8ed05c0-374d-4fcf-997f-c4b00f38904d.jpg)  
+Time taken for the project to execute with oneAPI(oneapi environment) : 36.77 seconds  
+
+Hence, we observe a difference of 13.05 seconds which is obtained with the help of oneAPI libraries.  
+
   
   
 ## Dynamic Traffic Signaling
