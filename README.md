@@ -24,7 +24,7 @@ Intel DevCloud Link: https://jupyter.oneapi.devcloud.intel.com/user/u184510/doc/
 The base environment contains a version of Python which is not installed through the Intel channel. The environment named oneapi contains the libraries which are installed through the Intel channel. 
 
 ![WhatsApp Image 2023-03-17 at 17 48 27](https://user-images.githubusercontent.com/80829447/225928512-ef24a2a3-c707-41c1-a6eb-76fbf5d2eeef.jpg)  
-The Dynamic Traffic Signalling model uses Tensorflow which is optimised using oneDNN.  
+The Dynamic Traffic Signalling model is executed on the local system wherein an environment is created and Tensorflow is installed through the Intel channel. The AI Analytics Toolkit is used to install and optimize all the libraries which are present in the project.  
 
 ## Time Elapsed  
 
