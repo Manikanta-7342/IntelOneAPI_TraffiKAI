@@ -17,15 +17,6 @@ TraffiKAI uses multiple memory intensive machine learning models which increases
 
 ![image](https://user-images.githubusercontent.com/80829447/225880812-89b881e0-dedf-461e-a85c-fa6c754e9d6f.png)  
 The Violoation Detection model is executed on the local system wherein an environment is created and Tensorflow is installed through the Intel channel. The AI Analytics Toolkit is used to install and optimize all the libraries which are present in the project.  
-
-
-
-Time elapsed in executing the TraffiKAI:-  
-with Intel oneAPI optimization:  
-without Intel oneAPI optimization:  
-
-
-This clearly shows that the usage of oneAPI oneDNN optimizes the libraries used and provides a better performance curve than running the project in a traditional environment.
   
   
 ## Dynamic Traffic Signaling
@@ -52,9 +43,10 @@ https://user-images.githubusercontent.com/80829447/205130444-28d5a190-54b9-424e-
 ## Usage 
 
 Steps to run this project:  
-STEP 1: Download the models and the weights from the drive link provided below.  
+STEP 1: Download the models, resources and test folders from the drive link provided below.  
 STEP 2: Clone the GitHub repository.  
-STEP 3: Run the code provided below in the terminal of the project folder.
+STEP 3: Create a new Conda environment and install the required libraries present in the requirements.txt through the Intel channel.
+STEP 4: Run the code provided below in the terminal of the project folder.
 
 Install the requirements:
 ```
@@ -67,7 +59,4 @@ streamlit run app.py
 ```
 
 Drive Link: https://drive.google.com/drive/folders/1TAgqHR8HnlVbFOhKwOagTckX0T06pOVv?usp=sharing 
-
-
-
 
