@@ -1,9 +1,7 @@
-# TraffiKAI
+# TraffiKAI (powered by Intel oneAPI)
 
 A-EYE on ROADS!
 An AI & ML solution to solve one of the basic but most important traffic problems in day to day life.  
-
-Youtube Video Link: https://youtu.be/Gtj8o2TuxGY
 
 Problem Statement:- The increasing number of vehicles in cities can cause high volume of traffic, and implies that traffic congestion has become more critical nowadays. In addition to that, fatalities due to traffic delays of emergency vehicles such as ambulance & fire brigade is a huge problem. In daily life, we often see that emergency vehicles face difficulty in passing through traffic.
 
@@ -32,9 +30,26 @@ System Workflow:-
 GUI:  
 
 
-https://user-images.githubusercontent.com/80829447/205130444-28d5a190-54b9-424e-b6b2-5154ea2337d0.mp4
+https://user-images.githubusercontent.com/80829447/205130444-28d5a190-54b9-424e-b6b2-5154ea2337d0.mp4  
 
-Usage 
+# The Intel oneAPI Edge  
+## Toolkit used: Intel® AI Analytics Toolkit (AI Kit) - oneDNN (Deep Neural Network Library)
+TraffiKAI uses multiple memory intensive machine learning models which increase the runtime by a significant amount causing a delay in the processing of the input videos on the systems with limited processing power. The Intel® AI Analytics Toolkit (AI Kit) helps in achieving better results by optimising the models with the help of oneAPI Deep Neural Network Library (oneDNN). TraffiKAI uses state-of-the-art deep learning frameworks like PyTorch and Tensorflow which are optimized for the Intel architecture by the oneAPI platform and further boosts the inference of the models. The toolkit also has support for a number of pre-trained models such as DenseNet-169, YOLOv3, LSTM (audio) which are used in TraffiKAI and help to improve the performance. 
+
+![image](https://user-images.githubusercontent.com/80829447/225880812-89b881e0-dedf-461e-a85c-fa6c754e9d6f.png)  
+The Violoation Detection model is executed on the local system wherein an environment is created and Tensorflow is installed through the Intel channel. The AI Analytics Toolkit is used to install and optimize all the libraries which are present in the project.  
+  
+  
+  
+Time elapsed in executing the TraffiKAI:-  
+with Intel oneAPI optimization:  
+without Intel oneAPI optimization:  
+
+
+This clearly shows that the usage of oneAPI oneDNN optimizes the libraries used and provides a better performance curve than running the project in a traditional environment.
+
+
+## Usage 
 
 Steps to run this project:  
 STEP 1: Download the models and the weights from the drive link provided below.  
@@ -52,5 +67,7 @@ streamlit run app.py
 ```
 
 Drive Link: https://drive.google.com/drive/folders/1TAgqHR8HnlVbFOhKwOagTckX0T06pOVv?usp=sharing 
+
+
 
 
